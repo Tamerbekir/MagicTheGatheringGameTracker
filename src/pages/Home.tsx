@@ -32,6 +32,44 @@ function Home() {
         { id: 2, username: "" },
         { id: 3, username: "" },
       ]);
+    } else if (value === 5) {
+      setPlayers([
+        { id: 0, username: "" },
+        { id: 1, username: "" },
+        { id: 2, username: "" },
+        { id: 3, username: "" },
+        { id: 4, username: "" },
+      ]);
+    } else if (value === 6) {
+      setPlayers([
+        { id: 0, username: "" },
+        { id: 1, username: "" },
+        { id: 2, username: "" },
+        { id: 3, username: "" },
+        { id: 4, username: "" },
+        { id: 5, username: "" },
+      ]);
+    } else if (value === 7) {
+      setPlayers([
+        { id: 0, username: "" },
+        { id: 1, username: "" },
+        { id: 2, username: "" },
+        { id: 3, username: "" },
+        { id: 4, username: "" },
+        { id: 5, username: "" },
+        { id: 6, username: "" },
+      ]);
+    } else if (value === 8) {
+      setPlayers([
+        { id: 0, username: "" },
+        { id: 1, username: "" },
+        { id: 2, username: "" },
+        { id: 3, username: "" },
+        { id: 4, username: "" },
+        { id: 5, username: "" },
+        { id: 6, username: "" },
+        { id: 7, username: "" },
+      ]);
     } else {
       setPlayers([]);
     }
@@ -134,6 +172,8 @@ function Home() {
 
         <button type="submit">Start Game</button>
       </form>
+
+      {}
     </div>
   );
 }

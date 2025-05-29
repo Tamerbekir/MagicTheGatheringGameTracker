@@ -1,15 +1,24 @@
-import { useNavigate } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
-export default function Game() {
-  const navigate = useNavigate();
+function Game() {
+  const location = useLocation();
+  const players = location.state.players;
+  // console.log(players);
 
-  const handleEndGame = () => {
-    navigate("/");
-  };
   return (
     <div>
-      <h1>Game</h1>
-      <button onClick={handleEndGame}>End Game</button>
+      <h1>Time for Battle</h1>
+      <div>
+        <div>
+          {players.map((player, index) => (
+            <div key={index}>
+              <button>{player.username}</button>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 }
+
+export default Game;
